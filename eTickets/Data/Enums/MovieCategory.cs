@@ -7,10 +7,12 @@ namespace eTickets.Data
 {
     public enum MovieCategory
     {
-        Action,
+        Action=1,
         Comedy,
         Drama,
-        Documentary
+        Documentary,
+        Cartoon,
+        Horror
 
     }
 }
