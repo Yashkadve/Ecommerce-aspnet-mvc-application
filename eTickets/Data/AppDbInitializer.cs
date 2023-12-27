@@ -46,15 +46,15 @@ namespace eTickets.Data
                 //Movies
                 if (!context.Movies.Any())
                 {
-                    context.Database.ExecuteSqlRaw("INSERT INTO Movies (Name, Description, Price, ImageURL, StartDate, EndDate, CinemaId, ProducerId, MovieCategory) VALUES ('Life', 'This is the Life movie description', 39.50, 'http://dotnethow.net/images/movies/movie-3.jpeg', GETDATE(), DATEADD(day, 10, GETDATE()), 2, 2, 'Documentary')");
-                    context.Database.ExecuteSqlRaw("INSERT INTO Movies (Name, Description, Price, ImageURL, StartDate, EndDate, CinemaId, ProducerId, MovieCategory) VALUES ('The Shawshank Redemption', 'This is the Shawshank Redemption description', 29.50, 'http://dotnethow.net/images/movies/movie-1.jpeg', GETDATE(), DATEADD(day, 3, GETDATE()), 1, 1, 'Action')");
+                    context.Database.ExecuteSqlRaw("INSERT INTO Movies (Name, Description, Price, ImageURL, StartDate, EndDate, CinemaId, ProducerId, MovieCategory) VALUES ('Life', 'This is the Life movie description', 39.50, 'http://dotnethow.net/images/movies/movie-3.jpeg', GETDATE(), DATEADD(day, 10, GETDATE()),5,3,'Documentary')");
+                    context.Database.ExecuteSqlRaw("INSERT INTO Movies (Name, Description, Price, ImageURL, StartDate, EndDate, CinemaId, ProducerId, MovieCategory) VALUES ('The Shawshank Redemption', 'This is the Shawshank Redemption description', 29.50, 'http://dotnethow.net/images/movies/movie-1.jpeg', GETDATE(), DATEADD(day, 3, GETDATE()),6,4,'Action')");
                     // Add more movies as needed
                 }
                 //Actors & Movies
                 if (!context.Actors_Movies.Any())
                 {
-                    context.Database.ExecuteSqlRaw("INSERT INTO Actors_Movies (ActorId, MovieId) VALUES (1,5)");
-                    context.Database.ExecuteSqlRaw("INSERT INTO Actors_Movies (ActorId, MovieId) VALUES (2, 6)");
+                    context.Database.ExecuteSqlRaw("INSERT INTO Actors_Movies (ActorId, MovieId) VALUES (5,14)");
+                    context.Database.ExecuteSqlRaw("INSERT INTO Actors_Movies (ActorId, MovieId) VALUES (6,15)");
                     // Add more actor-movie relationships as needed
                 }
             }
