@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace eTickets.Controllers
 {
-    public class CenimasController : Controller
+    public class CinemasController : Controller
     {
         private readonly AppDbContext _context;
-        public CenimasController(AppDbContext context)
+        public CinemasController(AppDbContext context)
         {
             _context = context;
         }
