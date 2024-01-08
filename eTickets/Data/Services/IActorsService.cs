@@ -9,9 +9,9 @@ namespace eTickets.Data.Services
     public interface IActorsService
     {
         //IEnumerable<Actor> GetAll(); To make actor method aync we use below method
-        Task<IEnumerable<Actor>> GetAll();
-        Actor GetById(int id);
-        void Add(Actor actor);
+        Task<IEnumerable<Actor>> GetAllAsync();
+        Task<Actor> GetByIdAsync(int id);
+        Task AddAsync(Actor actor);
         Actor Update(int id, Actor newActor);
         void Delete(int id);
     }
