@@ -14,7 +14,7 @@ namespace eTickets.Data.Base
         public EntityBaseRepository(AppDbContext context)
         {
             _context = context;
-        }
+        }  
 
         public async Task AddAsync(T entity)
         {
